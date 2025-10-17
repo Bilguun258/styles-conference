@@ -52,8 +52,9 @@ table {
   ==================================================
 */ 
 body{
+  background: #293f50;
   color:#888; 
-  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*
@@ -150,6 +151,7 @@ h5{
   color:#a9b2b9;
   font-size:14px;
   font-weight:400;
+  text-transform:uppercase;
 }
 strong{
   font-weight: 400;
@@ -169,9 +171,48 @@ a:hover {
 }
 a {
   color: #648880;
+  text-decoration:none;
 }
 .teaser a:hover h3 {
   color: #a9b2b9;
+}
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+
+/*
+  ==================================================
+  Buttons
+  ==================================================
+*/
+
+.btn {
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  transition: .5s;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
 }
 
 /*
@@ -183,31 +224,21 @@ a {
   border-top: 4px solid #648880;
   float: left;
   font-size: 48px;
+  font-weight: 100;
+  letter-spacing: .5px;
   line-height: 44px;
   padding: 40px 0 22px 0;
+  text-transform: uppercase;
 }
 .tagline {
   margin: 66px 0 22px 0;
+  text-align:right;
 }
 .primary-nav {
   font-size: 14px;
   font-weight: 400;
-}
-/*
-  ==================================================
-  Buttons
-  ==================================================
-*/
-
-.btn{
-  border-radius: 5px;
-  display: inline-block;
-  margin: 0;
-}
-
-.btn-alt{
-  border: 1px solid #dfe2e5;
-  padding: 10px 30px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
 }
 
 /*
@@ -217,14 +248,17 @@ a {
 */
 
 .hero{
+  color:#fff;
   line-height: 44px;
   padding: 22px 66px 80px; 
+  text-align: center;
 }
 .hero h2{
   font-size: 36px;
 }
 .hero p{
   font-size: 24px;
+  font-weight: 100;
 }
 
 /*
@@ -241,4 +275,22 @@ a {
 .primary-footer small {
   float: left;
   font-weight: 400;
+}
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+.nav {
+  text-align: right;
+}
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+.row{
+  background:#fff;
+  min-width: 960px;
+  padding:66px 0 44px 0;
 }
