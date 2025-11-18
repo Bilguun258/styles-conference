@@ -115,7 +115,7 @@ body {
 }
 .group {
   clear: both;
-  zoom: 1;
+  *zoom: 1;
 }
 
 /*
@@ -332,8 +332,9 @@ p a {
   border-radius: 5px;
   display: block;
   margin-bottom: 22px;
-  max-width: 100%;
+  max-width: 100%
 }
+
 /*
   ========================================
   Speakers
@@ -368,4 +369,7 @@ p a {
 }
 .venue-hotel {
   margin-bottom: 22px;
+}
+.venue-map {
+  height: 264px;
 }
